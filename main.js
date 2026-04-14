@@ -1,6 +1,5 @@
 import './style.css'
 
-import './style.css'
 
 const translations = {
   en: {
@@ -46,7 +45,30 @@ const translations = {
     modal_success_desc: "We will contact you shortly with your itinerary details. Get ready for an unforgettable Moroccan adventure!",
     desc_marrakech: "Discover the heart of Morocco in Marrakech. Wander through the maze-like medina, shop for spices and colorful textiles in the souks, and watch the sun set over the bustling Djemaa el-Fna square. Book a luxury riad or a guided desert expedition today.",
     desc_chefchaouen: "Experience serenity in the Blue Pearl of Morocco. Nestled in the Rif Mountains, Chefchaouen is renowned for its striking, blue-washed buildings, relaxed atmosphere, and incredible mountain hiking paths. Plan your tranquil getaway now.",
-    desc_sahara: "Embark on an unforgettable adventure into the vast Sahara Desert. Ride camels across golden dunes, listen to traditional Berber music around a campfire, and sleep under a mesmerizing canopy of stars in a luxury desert camp."
+    desc_sahara: "Embark on an unforgettable adventure into the vast Sahara Desert. Ride camels across golden dunes, listen to traditional Berber music around a campfire, and sleep under a mesmerizing canopy of stars in a luxury desert camp.",
+    test_header_title: "What Travelers Say",
+    test_header_sub: "Real stories from real adventurers who explored Morocco with us.",
+    test_1_quote: '"The Sahara desert camp was the highlight of our lives. Sleeping under the stars with traditional Berber music was pure magic!"',
+    test_1_name: "Sarah M.",
+    test_1_loc: "London, UK",
+    test_2_quote: '"Chefchaouen blew our minds. The blue streets, the mountain hikes, and the incredible food \u2014 Torritics planned every detail perfectly."',
+    test_2_name: "Jean D.",
+    test_2_loc: "Paris, France",
+    test_3_quote: '"From the bustling souks of Marrakech to the peaceful riads \u2014 this trip exceeded all expectations. We are already planning our return!"',
+    test_3_name: "Ahmed K.",
+    test_3_loc: "Dubai, UAE",
+    faq_header_title: "Frequently Asked Questions",
+    faq_header_sub: "Everything you need to know before your Moroccan adventure.",
+    faq_q1: 'Do I need a visa to visit Morocco? <span class="faq-icon">+</span>',
+    faq_a1: "Many nationalities can enter Morocco visa-free for up to 90 days, including citizens of the US, UK, EU, Canada, and Australia. Check with your local embassy for specific requirements.",
+    faq_q2: 'When is the best time to visit? <span class="faq-icon">+</span>',
+    faq_a2: "The best times are spring (March\u2013May) and autumn (September\u2013November) when the weather is warm but comfortable. Summer can be very hot in the desert, and winter is ideal for the Sahara.",
+    faq_q3: 'Are meals included in the tours? <span class="faq-icon">+</span>',
+    faq_a3: "Most of our packages include breakfast and dinner. Lunch is typically on your own so you can explore local street food and restaurants at your leisure.",
+    faq_q4: 'Is Morocco safe for solo travelers? <span class="faq-icon">+</span>',
+    faq_a4: "Yes! Morocco is one of the safest countries in Africa for tourists. Our guides are locals who know the culture, terrain, and best practices to ensure you have a safe and enriching experience.",
+    faq_q5: 'Can I customize my itinerary? <span class="faq-icon">+</span>',
+    faq_a5: "Absolutely! We specialize in tailor-made trips. Just tell us your interests, budget, and travel dates, and our experts will craft a personalized adventure just for you."
   },
   fr: {
     nav_home: "Accueil",
@@ -91,7 +113,30 @@ const translations = {
     modal_success_desc: "Nous vous contacterons bientôt avec les détails. Préparez-vous pour l'aventure !",
     desc_marrakech: "Découvrez le cœur du Maroc. Promenez-vous dans le labyrinthe de la médina, achetez des épices et admirez le coucher de soleil. Réservez un riad de luxe dès aujourd'hui.",
     desc_chefchaouen: "Découvrez la sérénité dans la Perle Bleue du Maroc. Nichée dans les montagnes du Rif, Chefchaouen est renommée pour son atmosphère détendue.",
-    desc_sahara: "Embarquez pour une aventure inoubliable dans le Sahara. Écoutez la musique berbère traditionnelle et dormez sous un ciel étoilé magnifique."
+    desc_sahara: "Embarquez pour une aventure inoubliable dans le Sahara. Écoutez la musique berbère traditionnelle et dormez sous un ciel étoilé magnifique.",
+    test_header_title: "Ce que disent nos voyageurs",
+    test_header_sub: "Des histoires vraies d'aventuriers qui ont exploré le Maroc avec nous.",
+    test_1_quote: '"Le camp dans le Sahara a été le point fort de notre vie. Dormir sous les étoiles avec la musique berbère traditionnelle était magique !"',
+    test_1_name: "Sarah M.",
+    test_1_loc: "Londres, Royaume-Uni",
+    test_2_quote: '"Chefchaouen nous a émerveillés. Les rues bleues, les randonnées et la nourriture incroyable \u2014 Torritics a planifié chaque détail."',
+    test_2_name: "Jean D.",
+    test_2_loc: "Paris, France",
+    test_3_quote: '"Des souks de Marrakech aux riads paisibles \u2014 ce voyage a dépassé toutes nos attentes. Nous planifions déjà notre retour !"',
+    test_3_name: "Ahmed K.",
+    test_3_loc: "Dubaï, ÉAU",
+    faq_header_title: "Questions Fréquentes",
+    faq_header_sub: "Tout ce qu'il faut savoir avant votre aventure marocaine.",
+    faq_q1: 'Ai-je besoin d\'un visa ? <span class="faq-icon">+</span>',
+    faq_a1: "De nombreuses nationalités peuvent entrer au Maroc sans visa jusqu'à 90 jours. Vérifiez auprès de votre ambassade.",
+    faq_q2: 'Quelle est la meilleure période ? <span class="faq-icon">+</span>',
+    faq_a2: "Le printemps (mars\u2013mai) et l'automne (sept\u2013nov) sont idéaux. L'été est très chaud dans le désert.",
+    faq_q3: 'Les repas sont-ils inclus ? <span class="faq-icon">+</span>',
+    faq_a3: "La plupart de nos forfaits incluent le petit-déjeuner et le dîner. Le déjeuner est libre pour explorer la cuisine locale.",
+    faq_q4: 'Le Maroc est-il sûr pour les voyageurs seuls ? <span class="faq-icon">+</span>',
+    faq_a4: "Oui ! Le Maroc est l'un des pays les plus sûrs d'Afrique pour les touristes. Nos guides locaux assurent une expérience sécurisée.",
+    faq_q5: 'Puis-je personnaliser mon itinéraire ? <span class="faq-icon">+</span>',
+    faq_a5: "Absolument ! Nous nous spécialisons dans les voyages sur mesure. Dites-nous vos intérêts et nos experts créeront l'aventure parfaite."
   },
   ar: {
     nav_home: "الرئيسية",
@@ -136,7 +181,30 @@ const translations = {
     modal_success_desc: "سنتصل بك قريبًا بمسار رحلتك. استعد لمغامرة مغربية لا تُنسى!",
     desc_marrakech: "اكتشف قلب المغرب في مراكش. تجول في المدينة المتاهة، واشترِ التوابل والمنسوجات، وشاهد غروب الشمس على ساحة جامع الفنا. احجز مسكنك اليوم.",
     desc_chefchaouen: "استمتع بالصفاء في جوهرة المغرب الزرقاء. تقع في جبال الريف، تشتهر شفشاون بمبانيها، وجوها المريح.",
-    desc_sahara: "انطلق في مغامرة لا تُنسى في الصحراء الكبرى. استمع إلى الموسيقى الأمازيغية التقليدية حول نار المخيم ونم تحت النجوم."
+    desc_sahara: "انطلق في مغامرة لا تُنسى في الصحراء الكبرى. استمع إلى الموسيقى الأمازيغية التقليدية حول نار المخيم ونم تحت النجوم.",
+    test_header_title: "ماذا يقول المسافرون",
+    test_header_sub: "قصص حقيقية من مغامرين استكشفوا المغرب معنا.",
+    test_1_quote: '"\u0643\u0627\u0646 \u0645\u062e\u064a\u0645 \u0627\u0644\u0635\u062d\u0631\u0627\u0621 \u0623\u0647\u0645 \u0644\u062d\u0638\u0629 \u0641\u064a \u062d\u064a\u0627\u062a\u0646\u0627. \u0627\u0644\u0646\u0648\u0645 \u062a\u062d\u062a \u0627\u0644\u0646\u062c\u0648\u0645 \u0645\u0639 \u0627\u0644\u0645\u0648\u0633\u064a\u0642\u0649 \u0627\u0644\u0623\u0645\u0627\u0632\u064a\u063a\u064a\u0629 \u0643\u0627\u0646 \u0633\u062d\u0631\u064b\u0627!"',
+    test_1_name: "سارة م.",
+    test_1_loc: "لندن، بريطانيا",
+    test_2_quote: '"\u0634\u0641\u0634\u0627\u0648\u0646 \u0623\u0628\u0647\u0631\u062a\u0646\u0627. \u0627\u0644\u0634\u0648\u0627\u0631\u0639 \u0627\u0644\u0632\u0631\u0642\u0627\u0621 \u0648\u0627\u0644\u0645\u0634\u064a \u0641\u064a \u0627\u0644\u062c\u0628\u0627\u0644 \u0648\u0627\u0644\u0637\u0639\u0627\u0645 \u0627\u0644\u0631\u0627\u0626\u0639 \u2014 \u062a\u0648\u0631\u064a\u062a\u064a\u0643\u0633 \u062e\u0637\u0637\u062a \u0643\u0644 \u0634\u064a\u0621."',
+    test_2_name: "جان د.",
+    test_2_loc: "باريس، فرنسا",
+    test_3_quote: '"\u0645\u0646 \u0623\u0633\u0648\u0627\u0642 \u0645\u0631\u0627\u0643\u0634 \u0627\u0644\u0635\u0627\u062e\u0628\u0629 \u0625\u0644\u0649 \u0627\u0644\u0631\u064a\u0627\u0636\u0627\u062a \u0627\u0644\u0647\u0627\u062f\u0626\u0629 \u2014 \u0647\u0630\u0647 \u0627\u0644\u0631\u062d\u0644\u0629 \u0641\u0627\u0642\u062a \u0643\u0644 \u0627\u0644\u062a\u0648\u0642\u0639\u0627\u062a!"',
+    test_3_name: "أحمد ك.",
+    test_3_loc: "دبي، الإمارات",
+    faq_header_title: "الأسئلة الشائعة",
+    faq_header_sub: "كل ما تحتاج معرفته قبل مغامرتك المغربية.",
+    faq_q1: 'هل أحتاج تأشيرة لزيارة المغرب؟ <span class="faq-icon">+</span>',
+    faq_a1: "يمكن لكثير من الجنسيات دخول المغرب بدون تأشيرة لمدة 90 يومًا. تحقق من سفارتك.",
+    faq_q2: 'ما هو أفضل وقت للزيارة؟ <span class="faq-icon">+</span>',
+    faq_a2: "الربيع (مارس\u2013مايو) والخريف (سبتمبر\u2013نوفمبر) هما الأفضل. الصيف حار جدًا في الصحراء.",
+    faq_q3: 'هل الوجبات مشمولة؟ <span class="faq-icon">+</span>',
+    faq_a3: "تشمل معظم باقاتنا الإفطار والعشاء. الغداء حر لاستكشاف مطاعم الشارع.",
+    faq_q4: 'هل المغرب آمن للمسافرين الفرديين؟ <span class="faq-icon">+</span>',
+    faq_a4: "نعم! المغرب من أكثر الدول أمانًا في أفريقيا للسياح. مرشدونا محليون يعرفون الثقافة.",
+    faq_q5: 'هل يمكنني تخصيص برنامجي؟ <span class="faq-icon">+</span>',
+    faq_a5: "بالتأكيد! نحن متخصصون في الرحلات المخصصة. أخبرنا باهتماماتك وسنصمم لك المغامرة المثالية."
   }
 };
 
@@ -173,6 +241,49 @@ document.addEventListener('DOMContentLoaded', () => {
       applyTranslations(e.target.value);
     });
   }
+
+  // Dark Mode Toggle
+  const darkToggle = document.getElementById('dark-mode-toggle');
+  const iconSun = darkToggle.querySelector('.icon-sun');
+  const iconMoon = darkToggle.querySelector('.icon-moon');
+  
+  // Restore saved theme
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'dark') {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    iconSun.style.display = 'none';
+    iconMoon.style.display = 'inline';
+  }
+
+  darkToggle.addEventListener('click', () => {
+    const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+    if (isDark) {
+      document.documentElement.removeAttribute('data-theme');
+      iconSun.style.display = 'inline';
+      iconMoon.style.display = 'none';
+      localStorage.setItem('theme', 'light');
+    } else {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      iconSun.style.display = 'none';
+      iconMoon.style.display = 'inline';
+      localStorage.setItem('theme', 'dark');
+    }
+  });
+
+  // FAQ Accordion Logic
+  const faqItems = document.querySelectorAll('.faq-item');
+  faqItems.forEach(item => {
+    const question = item.querySelector('.faq-question');
+    question.addEventListener('click', () => {
+      const isActive = item.classList.contains('active');
+      // Close all open FAQ items first
+      faqItems.forEach(i => i.classList.remove('active'));
+      // Toggle the clicked one
+      if (!isActive) {
+        item.classList.add('active');
+      }
+    });
+  });
 
   // Update year in footer
   document.getElementById('year').textContent = new Date().getFullYear();
