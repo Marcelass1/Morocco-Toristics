@@ -161,6 +161,8 @@ a {
   padding: 16px 36px;
   font-size: 1.1rem;
   box-shadow: 0 10px 20px rgba(211, 84, 0, 0.3);
+  border: none;
+  outline: none;
 }
 
 .btn-primary:hover {
@@ -174,6 +176,8 @@ a {
   color: var(--c-white) !important;
   padding: 10px 24px;
   font-size: 0.95rem;
+  border: none;
+  outline: none;
 }
 .btn-primary-sm:hover {
   background-color: var(--c-primary-hover);
