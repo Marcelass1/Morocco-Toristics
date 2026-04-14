@@ -281,6 +281,7 @@ document.addEventListener('DOMContentLoaded', () => {
     modalFormView.style.display = 'none';
     bookingForm.style.display = 'block';
     bookingSuccess.style.display = 'none';
+    modalBackBtn.style.display = 'inline-block';
     bookingForm.reset();
 
     modal.classList.add('active');
@@ -325,4 +326,33 @@ document.addEventListener('DOMContentLoaded', () => {
 
   modalClose.addEventListener('click', closeModal);
   modalOverlay.addEventListener('click', closeModal);
+
+  // Plan Your Trip Nav Button Logic
+  const navPlanBtn = document.getElementById('nav-plan-btn');
+  if (navPlanBtn) {
+    navPlanBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      modalTitle.setAttribute('data-i18n', 'nav_plan');
+      modalImg.src = '/hero_sahara.png'; 
+      modalImg.alt = 'Plan your trip';
+      
+      const currentLang = document.getElementById('lang-select') ? document.getElementById('lang-select').value : 'en';
+      applyTranslations(currentLang);
+
+      modalInfoView.style.display = 'none';
+      modalFormView.style.display = 'block';
+      bookingForm.style.display = 'block';
+      bookingSuccess.style.display = 'none';
+      modalBackBtn.style.display = 'none';
+      bookingForm.reset();
+
+      modal.classList.add('active');
+      
+      // Close mobile menu if open
+      const navLinks = document.querySelector('.nav-links');
+      if (navLinks && navLinks.style.display === 'flex' && window.innerWidth <= 900) {
+        document.querySelector('.mobile-menu-btn').click();
+      }
+    });
+  }
 });
