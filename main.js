@@ -5,7 +5,9 @@ const translations = {
   en: {
     nav_home: "Home",
     nav_dest: "Destinations",
+    nav_tours: "Tours",
     nav_exp: "Experiences",
+    nav_about: "About",
     nav_plan: "Plan Your Trip",
     hero_title: "Experience the <br><span class=\"text-gradient\">Magic of Morocco</span>",
     hero_sub: "Journey through ancient medinas, breathe the mountain air, and sleep under the Saharan stars.",
@@ -68,12 +70,44 @@ const translations = {
     faq_q4: 'Is Morocco safe for solo travelers? <span class="faq-icon">+</span>',
     faq_a4: "Yes! Morocco is one of the safest countries in Africa for tourists. Our guides are locals who know the culture, terrain, and best practices to ensure you have a safe and enriching experience.",
     faq_q5: 'Can I customize my itinerary? <span class="faq-icon">+</span>',
-    faq_a5: "Absolutely! We specialize in tailor-made trips. Just tell us your interests, budget, and travel dates, and our experts will craft a personalized adventure just for you."
+    faq_a5: "Absolutely! We specialize in tailor-made trips. Just tell us your interests, budget, and travel dates, and our experts will craft a personalized adventure just for you.",
+    tours_header_title: "Our Tour Packages",
+    tours_header_sub: "Handcrafted itineraries designed by local experts. Pick your adventure.",
+    tour_badge_pop: "Popular",
+    tour_badge_best: "Best Value",
+    tour_badge_adv: "Adventure",
+    tour_from: "From",
+    tour_1_name: "3-Day Sahara Express",
+    tour_1_f1: "✓ Camel trek across Erg Chebbi dunes",
+    tour_1_f2: "✓ Luxury desert camp under the stars",
+    tour_1_f3: "✓ Visit Ouarzazate & Aït Benhaddou",
+    tour_1_f4: "✓ Breakfast & dinner included",
+    tour_2_name: "7-Day Imperial Cities",
+    tour_2_f1: "✓ Marrakech, Fes, Meknes & Rabat",
+    tour_2_f2: "✓ Traditional riad accommodation",
+    tour_2_f3: "✓ Guided medina & souk tours",
+    tour_2_f4: "✓ All meals & airport transfers",
+    tour_3_name: "10-Day Grand Morocco",
+    tour_3_f1: "✓ Imperial cities + Sahara + coast",
+    tour_3_f2: "✓ Atlas Mountains day trek",
+    tour_3_f3: "✓ Essaouira beach getaway",
+    tour_3_f4: "✓ Private guide & luxury transport",
+    tour_book: "Book This Tour",
+    about_header_title: "Why MedinaraTravel?",
+    about_header_sub: "We are a team of passionate Moroccan locals dedicated to sharing the beauty of our homeland.",
+    about_p1: "Founded in Marrakech, MedinaraTravel was born from a deep love for Morocco's culture, landscapes, and people. Our team of local guides and travel experts has been crafting unforgettable journeys for over a decade.",
+    about_p2: "We believe travel should be authentic, personal, and transformative. Every itinerary we design is tailored to your interests \u2014 whether you seek adventure in the Sahara, tranquility in the mountains, or immersion in ancient medinas.",
+    about_stat1: "Tours Completed",
+    about_stat2: "Years Experience",
+    about_stat3: "Happy Travelers",
+    about_stat4: "Average Rating"
   },
   fr: {
     nav_home: "Accueil",
     nav_dest: "Destinations",
+    nav_tours: "Circuits",
     nav_exp: "Expériences",
+    nav_about: "À propos",
     nav_plan: "Planifiez",
     hero_title: "Vivez la <br><span class=\"text-gradient\">Magie du Maroc</span>",
     hero_sub: "Parcourez les anciennes médinas, respirez l'air des montagnes et dormez sous les étoiles sahariennes.",
@@ -136,12 +170,44 @@ const translations = {
     faq_q4: 'Le Maroc est-il sûr pour les voyageurs seuls ? <span class="faq-icon">+</span>',
     faq_a4: "Oui ! Le Maroc est l'un des pays les plus sûrs d'Afrique pour les touristes. Nos guides locaux assurent une expérience sécurisée.",
     faq_q5: 'Puis-je personnaliser mon itinéraire ? <span class="faq-icon">+</span>',
-    faq_a5: "Absolument ! Nous nous spécialisons dans les voyages sur mesure. Dites-nous vos intérêts et nos experts créeront l'aventure parfaite."
+    faq_a5: "Absolument ! Nous nous spécialisons dans les voyages sur mesure. Dites-nous vos intérêts et nos experts créeront l'aventure parfaite.",
+    tours_header_title: "Nos Forfaits",
+    tours_header_sub: "Des itinéraires sur mesure conçus par des experts locaux.",
+    tour_badge_pop: "Populaire",
+    tour_badge_best: "Meilleur rapport",
+    tour_badge_adv: "Aventure",
+    tour_from: "À partir de",
+    tour_1_name: "3 Jours — Sahara Express",
+    tour_1_f1: "✓ Trek à dos de chameau dans l'Erg Chebbi",
+    tour_1_f2: "✓ Camp de luxe dans le désert",
+    tour_1_f3: "✓ Visite de Ouarzazate & Aït Benhaddou",
+    tour_1_f4: "✓ Petit-déjeuner et dîner inclus",
+    tour_2_name: "7 Jours — Villes Impériales",
+    tour_2_f1: "✓ Marrakech, Fès, Meknès & Rabat",
+    tour_2_f2: "✓ Hébergement en riads traditionnels",
+    tour_2_f3: "✓ Visites guidées des médinas",
+    tour_2_f4: "✓ Tous les repas & transferts",
+    tour_3_name: "10 Jours — Grand Maroc",
+    tour_3_f1: "✓ Villes impériales + Sahara + côte",
+    tour_3_f2: "✓ Randonnée dans l'Atlas",
+    tour_3_f3: "✓ Escapade à Essaouira",
+    tour_3_f4: "✓ Guide privé & transport de luxe",
+    tour_book: "Réserver ce tour",
+    about_header_title: "Pourquoi MedinaraTravel ?",
+    about_header_sub: "Une équipe de Marocains passionnés, dédiés à partager la beauté de notre pays.",
+    about_p1: "Fondée à Marrakech, MedinaraTravel est née d'un amour profond pour la culture, les paysages et les gens du Maroc. Notre équipe crée des voyages inoubliables depuis plus de dix ans.",
+    about_p2: "Nous croyons que le voyage doit être authentique, personnel et transformateur. Chaque itinéraire que nous concevons est adapté à vos intérêts.",
+    about_stat1: "Tours Réalisés",
+    about_stat2: "Ans d'Expérience",
+    about_stat3: "Voyageurs Heureux",
+    about_stat4: "Note Moyenne"
   },
   ar: {
     nav_home: "الرئيسية",
     nav_dest: "الوجهات",
+    nav_tours: "الجولات",
     nav_exp: "التجارب",
+    nav_about: "عنا",
     nav_plan: "خطط لرحلتك",
     hero_title: "عش <br><span class=\"text-gradient\">سحر المغرب</span>",
     hero_sub: "سافر عبر المدن القديمة، واستنشق هواء الجبال، ونم تحت نجوم الصحراء.",
@@ -204,7 +270,37 @@ const translations = {
     faq_q4: 'هل المغرب آمن للمسافرين الفرديين؟ <span class="faq-icon">+</span>',
     faq_a4: "نعم! المغرب من أكثر الدول أمانًا في أفريقيا للسياح. مرشدونا محليون يعرفون الثقافة.",
     faq_q5: 'هل يمكنني تخصيص برنامجي؟ <span class="faq-icon">+</span>',
-    faq_a5: "بالتأكيد! نحن متخصصون في الرحلات المخصصة. أخبرنا باهتماماتك وسنصمم لك المغامرة المثالية."
+    faq_a5: "بالتأكيد! نحن متخصصون في الرحلات المخصصة. أخبرنا باهتماماتك وسنصمم لك المغامرة المثالية.",
+    tours_header_title: "باقات الرحلات",
+    tours_header_sub: "برامج مصممة بعناية من خبراء محليين. اختر مغامرتك.",
+    tour_badge_pop: "شائع",
+    tour_badge_best: "الأفضل قيمة",
+    tour_badge_adv: "مغامرة",
+    tour_from: "ابتداءً من",
+    tour_1_name: "3 أيام — صحراء اكسبريس",
+    tour_1_f1: "✓ رحلة جمال عبر كثبان ارغ شبي",
+    tour_1_f2: "✓ مخيم فاخر تحت النجوم",
+    tour_1_f3: "✓ زيارة ورزازات وآيت بن حدو",
+    tour_1_f4: "✓ الإفطار والعشاء مشمولان",
+    tour_2_name: "7 أيام — المدن الإمبراطورية",
+    tour_2_f1: "✓ مراكش، فاس، مكناس والرباط",
+    tour_2_f2: "✓ إقامة في رياضات تقليدية",
+    tour_2_f3: "✓ جولات مرشدة في المدينة والأسواق",
+    tour_2_f4: "✓ جميع الوجبات والتنقلات",
+    tour_3_name: "10 أيام — المغرب الكبير",
+    tour_3_f1: "✓ مدن إمبراطورية + صحراء + ساحل",
+    tour_3_f2: "✓ رحلة يومية في جبال الأطلس",
+    tour_3_f3: "✓ استرخاء على شاطئ الصويرة",
+    tour_3_f4: "✓ مرشد خاص ونقل فاخر",
+    tour_book: "احجز هذه الرحلة",
+    about_header_title: "لماذا MedinaraTravel؟",
+    about_header_sub: "فريق من المغاربة الشغوفين المكرسين لمشاركة جمال وطننا.",
+    about_p1: "تأسست MedinaraTravel في مراكش من حب عميق لثقافة المغرب ومناظره وأهله. فريقنا يصمم رحلات لا تُنسى منذ أكثر من عقد.",
+    about_p2: "نؤمن بأن السفر يجب أن يكون أصيلاً وشخصياً ومحولاً. كل برنامج نصممه مصمم حسب اهتماماتك.",
+    about_stat1: "رحلة مكتملة",
+    about_stat2: "سنوات خبرة",
+    about_stat3: "مسافر سعيد",
+    about_stat4: "متوسط التقييم"
   }
 };
 
@@ -466,4 +562,24 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
+
+  // Book This Tour buttons → open booking modal directly
+  document.querySelectorAll('.tour-book-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const tourName = btn.closest('.tour-card').querySelector('h3').textContent;
+      modalTitle.textContent = tourName;
+      modalImg.src = '/hero_sahara.png';
+      modalImg.alt = tourName;
+
+      modalInfoView.style.display = 'none';
+      modalFormView.style.display = 'block';
+      bookingForm.style.display = 'block';
+      bookingSuccess.style.display = 'none';
+      modalBackBtn.style.display = 'none';
+      bookingForm.reset();
+
+      modal.classList.add('active');
+    });
+  });
 });
