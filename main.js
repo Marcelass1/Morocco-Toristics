@@ -147,4 +147,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
   modalClose.addEventListener('click', closeModal);
   modalOverlay.addEventListener('click', closeModal);
+
+  // Main Contact Form Logic
+  const contactForm = document.getElementById('main-contact-form');
+  const contactSuccess = document.getElementById('contact-success');
+  if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const btn = contactForm.querySelector('button[type="submit"]');
+      btn.textContent = 'Sending...';
+      btn.style.opacity = '0.7';
+      btn.disabled = true;
+
+      // Simulate network request
+      setTimeout(() => {
+        contactForm.reset();
+        btn.textContent = 'Send Message';
+        btn.style.opacity = '1';
+        btn.disabled = false;
+        contactSuccess.style.display = 'block';
+        
+        setTimeout(() => {
+          contactSuccess.style.display = 'none';
+        }, 5000);
+      }, 1500);
+    });
+  }
 });
