@@ -61,12 +61,60 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Handle Discover buttons
+  // Destination Modal Logic
+  const modal = document.getElementById('destination-modal');
+  const modalOverlay = document.querySelector('.modal-overlay');
+  const modalClose = document.querySelector('.modal-close');
+  const modalImg = document.getElementById('modal-img');
+  const modalTitle = document.getElementById('modal-title');
+  const modalDesc = document.getElementById('modal-desc');
+  const modalBookBtn = document.getElementById('modal-book-btn');
+  
   const cardLinks = document.querySelectorAll('.card-link');
+  
+  const destinationData = {
+    'Marrakech': {
+      img: '/city_marrakech.png',
+      desc: 'Discover the heart of Morocco in Marrakech. Wander through the maze-like medina, shop for spices and colorful textiles in the souks, and watch the sun set over the bustling Djemaa el-Fna square. Book a luxury riad or a guided desert expedition today.'
+    },
+    'Chefchaouen': {
+      img: '/city_chefchaouen.png',
+      desc: 'Experience serenity in the Blue Pearl of Morocco. Nestled in the Rif Mountains, Chefchaouen is renowned for its striking, blue-washed buildings, relaxed atmosphere, and incredible mountain hiking paths. Plan your tranquil getaway now.'
+    },
+    'Sahara Desert': {
+      img: '/hero_sahara.png',
+      desc: 'Embark on an unforgettable adventure into the vast Sahara Desert. Ride camels across golden dunes, listen to traditional Berber music around a campfire, and sleep under a mesmerizing canopy of stars in a luxury desert camp.'
+    }
+  };
+
+  function openModal(title, img, desc) {
+    modalTitle.textContent = title;
+    modalImg.src = img;
+    modalImg.alt = title;
+    modalDesc.textContent = desc;
+    modal.classList.add('active');
+  }
+
+  function closeModal() {
+    modal.classList.remove('active');
+  }
+
   cardLinks.forEach(link => {
     link.addEventListener('click', (e) => {
       e.preventDefault();
-      alert('Destination details and booking functionality coming soon!');
+      const card = link.closest('.destination-card');
+      const title = card.querySelector('h3').textContent;
+      
+      const data = destinationData[title] || {
+        img: card.querySelector('img').src,
+        desc: 'Detailed itinerary and booking options for this amazing destination are currently being prepared.'
+      };
+      
+      openModal(title, data.img, data.desc);
     });
   });
+
+  modalClose.addEventListener('click', closeModal);
+  modalOverlay.addEventListener('click', closeModal);
+  modalBookBtn.addEventListener('click', closeModal);
 });
