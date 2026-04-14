@@ -297,6 +297,8 @@ a {
   box-shadow: 0 10px 30px rgba(0,0,0,0.05);
   transition: var(--transition);
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
 }
 
 .destination-card:hover {
@@ -308,6 +310,7 @@ a {
   width: 100%;
   height: 250px;
   overflow: hidden;
+  flex-shrink: 0;
 }
 
 .card-img-wrap img {
@@ -323,6 +326,9 @@ a {
 
 .card-content {
   padding: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .card-content h3 {
@@ -342,6 +348,7 @@ a {
   color: var(--c-primary);
   display: inline-flex;
   align-items: center;
+  margin-top: auto;
 }
 .destination-card:hover .card-link {
   color: var(--c-primary-hover);
