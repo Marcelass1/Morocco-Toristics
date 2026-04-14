@@ -155,10 +155,43 @@
           </div>
           <div class="modal-info">
             <h2 id="modal-title">Destination</h2>
-            <p id="modal-desc">Description goes here.</p>
-            <div class="modal-actions">
-              <a href="#contact" class="btn-primary" id="modal-book-btn">Book Now</a>
+            
+            <!-- Default Info View -->
+            <div id="modal-info-view">
+              <p id="modal-desc">Description goes here.</p>
+              <div class="modal-actions">
+                <button class="btn-primary" id="modal-book-btn">Book Now</button>
+              </div>
             </div>
+
+            <!-- Booking Form View (Hidden by default) -->
+            <div id="modal-form-view" style="display: none;">
+              <form id="booking-form">
+                <div class="form-group">
+                  <input type="text" id="b-name" placeholder="Full Name" required>
+                </div>
+                <div class="form-group">
+                  <input type="email" id="b-email" placeholder="Email Address" required>
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <input type="date" id="b-date" required>
+                  </div>
+                  <div class="form-group">
+                    <input type="number" id="b-guests" placeholder="Guests" min="1" max="10" required>
+                  </div>
+                </div>
+                <div class="modal-actions form-actions">
+                  <button type="button" class="btn-secondary" id="modal-back-btn">Back</button>
+                  <button type="submit" class="btn-primary">Confirm Booking</button>
+                </div>
+              </form>
+              <div id="booking-success" style="display: none; text-align: center; padding: 20px 0;">
+                <h3 style="color: var(--c-primary); font-size: 1.5rem; margin-bottom: 10px;">Booking Confirmed!</h3>
+                <p>We will contact you shortly with your itinerary details.</p>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>

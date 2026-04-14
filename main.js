@@ -69,6 +69,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalTitle = document.getElementById('modal-title');
   const modalDesc = document.getElementById('modal-desc');
   const modalBookBtn = document.getElementById('modal-book-btn');
+  const modalInfoView = document.getElementById('modal-info-view');
+  const modalFormView = document.getElementById('modal-form-view');
+  const modalBackBtn = document.getElementById('modal-back-btn');
+  const bookingForm = document.getElementById('booking-form');
+  const bookingSuccess = document.getElementById('booking-success');
   
   const cardLinks = document.querySelectorAll('.card-link');
   
@@ -92,6 +97,14 @@ document.addEventListener('DOMContentLoaded', () => {
     modalImg.src = img;
     modalImg.alt = title;
     modalDesc.textContent = desc;
+    
+    // Reset views
+    modalInfoView.style.display = 'block';
+    modalFormView.style.display = 'none';
+    bookingForm.style.display = 'block';
+    bookingSuccess.style.display = 'none';
+    bookingForm.reset();
+
     modal.classList.add('active');
   }
 
@@ -114,7 +127,24 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  modalBookBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    modalInfoView.style.display = 'none';
+    modalFormView.style.display = 'block';
+  });
+
+  modalBackBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    modalFormView.style.display = 'none';
+    modalInfoView.style.display = 'block';
+  });
+
+  bookingForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    bookingForm.style.display = 'none';
+    bookingSuccess.style.display = 'block';
+  });
+
   modalClose.addEventListener('click', closeModal);
   modalOverlay.addEventListener('click', closeModal);
-  modalBookBtn.addEventListener('click', closeModal);
 });
