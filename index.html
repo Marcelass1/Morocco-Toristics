@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Torritics - Discover Morocco</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav id="navbar" class="glass-nav">
+      <div class="nav-container">
+        <a href="#" class="logo">Torritics.</a>
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#destinations">Destinations</a>
+          <a href="#experiences">Experiences</a>
+          <a href="#contact" class="btn-primary-sm">Plan Your Trip</a>
+        </div>
+        <div class="mobile-menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-bg" style="background-image: url('/hero_sahara.png');"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 class="hero-title fade-in">Experience the <br><span class="text-gradient">Magic of Morocco</span></h1>
+        <p class="hero-subtitle fade-in delay-1">Journey through ancient medinas, breathe the mountain air, and sleep under the Saharan stars.</p>
+        <div class="hero-ctas fade-in delay-2">
+          <a href="#destinations" class="btn-primary">Explore Destinations</a>
+          <a href="#experiences" class="btn-secondary">View Experiences</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section id="destinations" class="destinations section-padding">
+      <div class="container">
+        <div class="section-header">
+          <h2>Popular Destinations</h2>
+          <p>Discover the rich history and vibrant colors of our most beloved cities and landscapes.</p>
+        </div>
+        <div class="grid-3">
+          <!-- Card 1 -->
+          <div class="destination-card">
+            <div class="card-img-wrap">
+              <img src="/city_marrakech.png" alt="Marrakech Medina" />
+            </div>
+            <div class="card-content">
+              <h3>Marrakech</h3>
+              <p>The Red City. Lose yourself in the bustling souks and vibrant Djemaa el-Fna square.</p>
+              <a href="#" class="card-link">Discover →</a>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="destination-card">
+            <div class="card-img-wrap">
+              <img src="/city_chefchaouen.png" alt="Chefchaouen Blue Streets" />
+            </div>
+            <div class="card-content">
+              <h3>Chefchaouen</h3>
+              <p>The Blue Pearl. A tranquil mountain town famous for its picturesque blue-washed buildings.</p>
+              <a href="#" class="card-link">Discover →</a>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="destination-card">
+            <div class="card-img-wrap">
+              <img src="/hero_sahara.png" alt="Sahara Desert Dunes" />
+            </div>
+            <div class="card-content">
+              <h3>Sahara Desert</h3>
+              <p>Merzouga & Beyond. Ride camels over massive golden dunes and camp under breathtaking night skies.</p>
+              <a href="#" class="card-link">Discover →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experiences Section -->
+    <section id="experiences" class="experiences section-padding bg-light">
+      <div class="container">
+        <div class="section-header">
+          <h2>Authentic Experiences</h2>
+          <p>Immerse yourself in the local culture, cuisine, and traditions of Morocco.</p>
+        </div>
+        <div class="experience-list">
+          <div class="exp-item reverse">
+            <div class="exp-text">
+              <h3>Stay in a Traditional Riad</h3>
+              <p>Experience the tranquility of a traditional Moroccan courtyard home. Hidden behind modest doors in the winding alleys of the old medina lie stunning palaces featuring intricate tilework (Zellij), carved plaster, and peaceful fountains.</p>
+            </div>
+            <div class="exp-img placeholder-gradient placeholder-riad"></div>
+          </div>
+          <div class="exp-item">
+            <div class="exp-text">
+              <h3>Savor Moroccan Cuisine</h3>
+              <p>Taste the world-famous slow-cooked Tagines, fluffy couscous, and refreshing mint tea. Moroccan food is a vibrant mix of Arabic, Andalusian, and Berber traditions with complex spice blends like Ras el Hanout.</p>
+            </div>
+            <div class="exp-img placeholder-gradient placeholder-food"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <h2>Torritics.</h2>
+          <p>Your ultimate guide to exploring the unparalleled beauty and rich culture of Morocco.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#experiences">Experiences</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <ul>
+            <li>Email: hello@torritics.ma</li>
+            <li>Phone: +212 555 000 111</li>
+            <li>Address: Medina, Marrakech, Morocco</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Torritics Tourism. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
