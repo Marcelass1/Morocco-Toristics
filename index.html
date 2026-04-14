@@ -17,11 +17,16 @@
       <div class="nav-container">
         <a href="#" class="logo">Torritics.</a>
         <div class="nav-links">
-          <a href="#home">Home</a>
-          <a href="#destinations">Destinations</a>
-          <a href="#experiences">Experiences</a>
-          <a href="#contact" class="btn-primary-sm">Plan Your Trip</a>
+          <a href="#home" data-i18n="nav_home">Home</a>
+          <a href="#destinations" data-i18n="nav_dest">Destinations</a>
+          <a href="#experiences" data-i18n="nav_exp">Experiences</a>
+          <a href="#contact" class="btn-primary-sm" data-i18n="nav_plan">Plan Your Trip</a>
         </div>
+        <select id="lang-select" class="lang-selector">
+          <option value="en">EN</option>
+          <option value="fr">FR</option>
+          <option value="ar">AR</option>
+        </select>
         <div class="mobile-menu-btn">
           <span></span>
           <span></span>
@@ -35,11 +40,11 @@
       <div class="hero-bg" style="background-image: url('/hero_sahara.png');"></div>
       <div class="hero-overlay"></div>
       <div class="hero-content">
-        <h1 class="hero-title fade-in">Experience the <br><span class="text-gradient">Magic of Morocco</span></h1>
-        <p class="hero-subtitle fade-in delay-1">Journey through ancient medinas, breathe the mountain air, and sleep under the Saharan stars.</p>
+        <h1 class="hero-title fade-in" data-i18n="hero_title">Experience the <br><span class="text-gradient">Magic of Morocco</span></h1>
+        <p class="hero-subtitle fade-in delay-1" data-i18n="hero_sub">Journey through ancient medinas, breathe the mountain air, and sleep under the Saharan stars.</p>
         <div class="hero-ctas fade-in delay-2">
-          <a href="#destinations" class="btn-primary">Explore Destinations</a>
-          <a href="#experiences" class="btn-secondary">View Experiences</a>
+          <a href="#destinations" class="btn-primary" data-i18n="hero_btn_exp">Explore Destinations</a>
+          <a href="#experiences" class="btn-secondary" data-i18n="hero_btn_view">View Experiences</a>
         </div>
       </div>
     </section>
@@ -48,41 +53,41 @@
     <section id="destinations" class="destinations section-padding">
       <div class="container">
         <div class="section-header">
-          <h2>Popular Destinations</h2>
-          <p>Discover the rich history and vibrant colors of our most beloved cities and landscapes.</p>
+          <h2 data-i18n="dest_header_title">Popular Destinations</h2>
+          <p data-i18n="dest_header_sub">Discover the rich history and vibrant colors of our most beloved cities and landscapes.</p>
         </div>
         <div class="grid-3">
           <!-- Card 1 -->
-          <div class="destination-card">
+          <div class="destination-card" data-dest="Marrakech">
             <div class="card-img-wrap">
               <img src="/city_marrakech.png" alt="Marrakech Medina" />
             </div>
             <div class="card-content">
-              <h3>Marrakech</h3>
-              <p>The Red City. Lose yourself in the bustling souks and vibrant Djemaa el-Fna square.</p>
-              <a href="#" class="card-link">Discover →</a>
+              <h3 data-i18n="dest_marrakech">Marrakech</h3>
+              <p data-i18n="dest_marrakech_sub">The Red City. Lose yourself in the bustling souks and vibrant Djemaa el-Fna square.</p>
+              <a href="#" class="card-link" data-i18n="card_discover">Discover →</a>
             </div>
           </div>
           <!-- Card 2 -->
-          <div class="destination-card">
+          <div class="destination-card" data-dest="Chefchaouen">
             <div class="card-img-wrap">
               <img src="/city_chefchaouen.png" alt="Chefchaouen Blue Streets" />
             </div>
             <div class="card-content">
-              <h3>Chefchaouen</h3>
-              <p>The Blue Pearl. A tranquil mountain town famous for its picturesque blue-washed buildings.</p>
-              <a href="#" class="card-link">Discover →</a>
+              <h3 data-i18n="dest_chefchaouen">Chefchaouen</h3>
+              <p data-i18n="dest_chefchaouen_sub">The Blue Pearl. A tranquil mountain town famous for its picturesque blue-washed buildings.</p>
+              <a href="#" class="card-link" data-i18n="card_discover">Discover →</a>
             </div>
           </div>
           <!-- Card 3 -->
-          <div class="destination-card">
+          <div class="destination-card" data-dest="Sahara Desert">
             <div class="card-img-wrap">
               <img src="/hero_sahara.png" alt="Sahara Desert Dunes" />
             </div>
             <div class="card-content">
-              <h3>Sahara Desert</h3>
-              <p>Merzouga & Beyond. Ride camels over massive golden dunes and camp under breathtaking night skies.</p>
-              <a href="#" class="card-link">Discover →</a>
+              <h3 data-i18n="dest_sahara">Sahara Desert</h3>
+              <p data-i18n="dest_sahara_sub">Merzouga & Beyond. Ride camels over massive golden dunes and camp under breathtaking night skies.</p>
+              <a href="#" class="card-link" data-i18n="card_discover">Discover →</a>
             </div>
           </div>
         </div>
@@ -93,21 +98,21 @@
     <section id="experiences" class="experiences section-padding bg-light">
       <div class="container">
         <div class="section-header">
-          <h2>Authentic Experiences</h2>
-          <p>Immerse yourself in the local culture, cuisine, and traditions of Morocco.</p>
+          <h2 data-i18n="exp_header_title">Authentic Experiences</h2>
+          <p data-i18n="exp_header_sub">Immerse yourself in the local culture, cuisine, and traditions of Morocco.</p>
         </div>
         <div class="experience-list">
           <div class="exp-item reverse">
             <div class="exp-text">
-              <h3>Stay in a Traditional Riad</h3>
-              <p>Experience the tranquility of a traditional Moroccan courtyard home. Hidden behind modest doors in the winding alleys of the old medina lie stunning palaces featuring intricate tilework (Zellij), carved plaster, and peaceful fountains.</p>
+              <h3 data-i18n="exp_riad">Stay in a Traditional Riad</h3>
+              <p data-i18n="exp_riad_sub">Experience the tranquility of a traditional Moroccan courtyard home. Hidden behind modest doors in the winding alleys of the old medina lie stunning palaces featuring intricate tilework (Zellij), carved plaster, and peaceful fountains.</p>
             </div>
             <div class="exp-img placeholder-gradient placeholder-riad"></div>
           </div>
           <div class="exp-item">
             <div class="exp-text">
-              <h3>Savor Moroccan Cuisine</h3>
-              <p>Taste the world-famous slow-cooked Tagines, fluffy couscous, and refreshing mint tea. Moroccan food is a vibrant mix of Arabic, Andalusian, and Berber traditions with complex spice blends like Ras el Hanout.</p>
+              <h3 data-i18n="exp_food">Savor Moroccan Cuisine</h3>
+              <p data-i18n="exp_food_sub">Taste the world-famous slow-cooked Tagines, fluffy couscous, and refreshing mint tea. Moroccan food is a vibrant mix of Arabic, Andalusian, and Berber traditions with complex spice blends like Ras el Hanout.</p>
             </div>
             <div class="exp-img placeholder-gradient placeholder-food"></div>
           </div>
@@ -120,22 +125,22 @@
       <div class="container footer-grid">
         <div class="footer-brand">
           <h2>Torritics.</h2>
-          <p>Your ultimate guide to exploring the unparalleled beauty and rich culture of Morocco.</p>
+          <p data-i18n="footer_desc">Your ultimate guide to exploring the unparalleled beauty and rich culture of Morocco.</p>
         </div>
         <div class="footer-links">
-          <h4>Quick Links</h4>
+          <h4 data-i18n="footer_quick">Quick Links</h4>
           <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#destinations">Destinations</a></li>
-            <li><a href="#experiences">Experiences</a></li>
+            <li><a href="#home" data-i18n="nav_home">Home</a></li>
+            <li><a href="#destinations" data-i18n="nav_dest">Destinations</a></li>
+            <li><a href="#experiences" data-i18n="nav_exp">Experiences</a></li>
           </ul>
         </div>
         <div class="footer-contact">
-          <h4>Contact Us</h4>
+          <h4 data-i18n="footer_contact">Contact Us</h4>
           <ul>
-            <li>Email: hello@torritics.ma</li>
-            <li>Phone: +212 555 000 111</li>
-            <li>Address: Medina, Marrakech, Morocco</li>
+            <li><span data-i18n="footer_email">Email:</span> hello@torritics.ma</li>
+            <li><span data-i18n="footer_phone">Phone:</span> +212 555 000 111</li>
+            <li><span data-i18n="footer_address">Address:</span> Medina, Marrakech, Morocco</li>
           </ul>
         </div>
       </div>
@@ -160,25 +165,25 @@
             <div id="modal-info-view">
               <p id="modal-desc">Description goes here.</p>
               <div class="modal-actions">
-                <button class="btn-primary" id="modal-book-btn">Book Now</button>
+                <button class="btn-primary" id="modal-book-btn" data-i18n="modal_book_now">Book Now</button>
               </div>
             </div>
 
             <!-- Booking Form View (Hidden by default) -->
             <div id="modal-form-view" style="display: none;">
-              <p style="color: var(--c-text-light); margin-bottom: 20px; font-size: 1.05rem; line-height: 1.6;">
+              <p style="color: var(--c-text-light); margin-bottom: 20px; font-size: 1.05rem; line-height: 1.6;" data-i18n="modal_form_intro">
                 Excellent choice! We're thrilled to help you explore this beautiful destination. Tell us a bit about your travel plans, and our local experts will reach out to craft your perfect itinerary.
               </p>
               <form id="booking-form">
                 <div class="form-group">
-                  <input type="text" id="b-name" placeholder="Full Name" required>
+                  <input type="text" id="b-name" placeholder="Full Name" data-i18n-placeholder="placeholder_name" required>
                 </div>
                 <div class="form-row">
                   <div class="form-group">
-                    <input type="email" id="b-email" placeholder="Email Address" required>
+                    <input type="email" id="b-email" placeholder="Email Address" data-i18n-placeholder="placeholder_email" required>
                   </div>
                   <div class="form-group">
-                    <input type="tel" id="b-phone" placeholder="Phone Number" required>
+                    <input type="tel" id="b-phone" placeholder="Phone Number" data-i18n-placeholder="placeholder_phone" required>
                   </div>
                 </div>
                 <div class="form-row">
@@ -186,20 +191,20 @@
                     <input type="date" id="b-date" required>
                   </div>
                   <div class="form-group">
-                    <input type="number" id="b-guests" placeholder="Guests" min="1" max="10" required>
+                    <input type="number" id="b-guests" placeholder="Guests" data-i18n-placeholder="placeholder_guests" min="1" max="10" required>
                   </div>
                 </div>
                 <div class="form-group">
-                  <textarea id="b-message" rows="3" placeholder="Special Requests or Message" style="width: 100%; padding: 12px 15px; border: 1px solid rgba(0,0,0,0.1); border-radius: 8px; font-family: var(--font-main); background: var(--c-bg-light); color: var(--c-text); outline: none; transition: var(--transition); resize: vertical;"></textarea>
+                  <textarea id="b-message" rows="3" placeholder="Special Requests or Message" data-i18n-placeholder="placeholder_msg" style="width: 100%; padding: 12px 15px; border: 1px solid rgba(0,0,0,0.1); border-radius: 8px; font-family: var(--font-main); background: var(--c-bg-light); color: var(--c-text); outline: none; transition: var(--transition); resize: vertical;"></textarea>
                 </div>
                 <div class="modal-actions form-actions">
-                  <button type="button" class="btn-outline" id="modal-back-btn">Back</button>
-                  <button type="submit" class="btn-primary">Confirm Booking</button>
+                  <button type="button" class="btn-outline" id="modal-back-btn" data-i18n="modal_back">Back</button>
+                  <button type="submit" class="btn-primary" data-i18n="modal_confirm">Confirm Booking</button>
                 </div>
               </form>
               <div id="booking-success" style="display: none; text-align: center; padding: 20px 0;">
-                <h3 style="color: var(--c-primary); font-size: 1.5rem; margin-bottom: 10px;">Booking Confirmed!</h3>
-                <p>We will contact you shortly with your itinerary details. Get ready for an unforgettable Moroccan adventure!</p>
+                <h3 style="color: var(--c-primary); font-size: 1.5rem; margin-bottom: 10px;" data-i18n="modal_success_title">Booking Confirmed!</h3>
+                <p data-i18n="modal_success_desc">We will contact you shortly with your itinerary details. Get ready for an unforgettable Moroccan adventure!</p>
               </div>
             </div>
 

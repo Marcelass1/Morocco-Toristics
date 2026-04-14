@@ -145,6 +145,45 @@ a {
   width: 100%;
 }
 
+.lang-selector {
+  margin-left: 20px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(0,0,0,0.1);
+  background: var(--c-bg-light);
+  font-family: var(--font-main);
+  font-weight: 600;
+  color: var(--c-text);
+  cursor: pointer;
+  outline: none;
+  transition: var(--transition);
+}
+
+.lang-selector:hover {
+  border-color: var(--c-primary);
+}
+
+/* RTL Support */
+[dir="rtl"] .lang-selector {
+  margin-left: 0;
+  margin-right: 20px;
+}
+[dir="rtl"] .hero-title, [dir="rtl"] .hero-subtitle, [dir="rtl"] .section-header {
+  text-align: right;
+}
+[dir="rtl"] .card-content, [dir="rtl"] .exp-text {
+  text-align: right;
+}
+[dir="rtl"] .card-link {
+  flex-direction: row-reverse;
+}
+[dir="rtl"] .pro-form label {
+  text-align: right;
+}
+[dir="rtl"] .footer-grid > div {
+  text-align: right;
+}
+
 /* Buttons */
 .btn-primary, .btn-primary-sm, .btn-secondary {
   display: inline-block;
