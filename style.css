@@ -377,6 +377,12 @@ a {
   gap: 40px;
 }
 
+.grid-5 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 30px;
+}
+
 .destination-card {
   background: var(--c-white);
   border-radius: var(--border-radius);
@@ -597,7 +603,7 @@ a {
   .hero-title {
     font-size: 3.5rem;
   }
-  .grid-3 {
+  .grid-3, .grid-5 {
     grid-template-columns: 1fr;
   }
   .exp-item, .exp-item.reverse {
