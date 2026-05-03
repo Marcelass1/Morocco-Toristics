@@ -971,83 +971,15 @@ document.addEventListener('DOMContentLoaded', () => {
   const bookingForm = document.getElementById('booking-form');
   const bookingSuccess = document.getElementById('booking-success');
   
-  const cardLinks = document.querySelectorAll('.card-link');
   
-  const destinationData = {
-    'Marrakech': {
-      img: '/city_marrakech.png',
-      i18nKey: 'desc_marrakech'
-    },
-    'Chefchaouen': {
-      img: '/city_chefchaouen.png',
-      i18nKey: 'desc_chefchaouen'
-    },
-    'Sahara Desert': {
-      img: '/hero_sahara.png',
-      i18nKey: 'desc_sahara'
-    },
-    'Fes': {
-      img: '/city_fes.png',
-      i18nKey: 'desc_fes'
-    },
-    'Casablanca': {
-      img: '/city_casablanca.png',
-      i18nKey: 'desc_casablanca'
-    },
-    'Rabat': {
-      img: '/city_rabat.png',
-      i18nKey: 'desc_rabat'
-    },
-    'Essaouira': {
-      img: '/city_essaouira.png',
-      i18nKey: 'desc_essaouira'
-    },
-    'Tangier': {
-      img: '/city_tangier.png',
-      i18nKey: 'desc_tangier'
-    }
-  };
+  
+  
 
-  function openModal(destKey, img, i18nKey) {
-    // Rely exclusively on the data-i18n so that applying translations updates the modal content immediately
-    modalTitle.setAttribute('data-i18n', 'dest_' + destKey.toLowerCase().replace(' ', '_'));
-    modalDesc.setAttribute('data-i18n', i18nKey);
-    modalImg.src = img;
-    modalImg.alt = destKey;
-    
-    // Apply current translations to map the new keys immediately
-    const currentLang = document.getElementById('lang-select').value;
-    applyTranslations(currentLang);
-
-    // Reset views
-    modalInfoView.style.display = 'block';
-    modalFormView.style.display = 'none';
-    bookingForm.style.display = 'block';
-    bookingSuccess.style.display = 'none';
-    modalBackBtn.style.display = 'inline-block';
-    bookingForm.reset();
-
-    modal.classList.add('active');
-  }
+  
 
   function closeModal() {
     modal.classList.remove('active');
   }
-
-  cardLinks.forEach(link => {
-    link.addEventListener('click', (e) => {
-      e.preventDefault();
-      const card = link.closest('.destination-card');
-      const destKey = card.dataset.dest;
-      
-      const data = destinationData[destKey] || {
-        img: card.querySelector('img').src,
-        i18nKey: 'desc_marrakech'
-      };
-      
-      openModal(destKey, data.img, data.i18nKey);
-    });
-  });
 
   modalBookBtn.addEventListener('click', (e) => {
     e.preventDefault();
