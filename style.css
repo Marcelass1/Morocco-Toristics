@@ -162,6 +162,7 @@ a {
   height: 50px;
   width: auto;
   display: block;
+  border-radius: 50%; /* Make the square logo a perfect circle */
 }
 
 .nav-links {
