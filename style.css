@@ -1172,11 +1172,38 @@ textarea:focus {
 }
 
 @media (max-width: 900px) {
-  .tours-grid {
+  .hero-title {
+    font-size: 3.5rem;
+  }
+  .grid-3, .grid-5 {
     grid-template-columns: 1fr;
   }
-  .about-content {
+  .exp-item, .exp-item.reverse {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .footer-grid {
     grid-template-columns: 1fr;
     gap: 40px;
+  }
+  .nav-links {
+    display: none;
+  }
+  .mobile-menu-btn {
+    display: flex;
+  }
+  .logo {
+    font-size: 1.3rem; /* Prevent overflow on small screens */
+  }
+  /* Hide slider arrows on mobile since users swipe natively */
+  .tour-swiper .swiper-button-next,
+  .tour-swiper .swiper-button-prev {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1.15rem; /* Even smaller for very narrow screens */
   }
 }
