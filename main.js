@@ -995,8 +995,35 @@ document.addEventListener('DOMContentLoaded', () => {
 
   bookingForm.addEventListener('submit', (e) => {
     e.preventDefault();
+    
+    // Collect data
+    const name = document.getElementById('b-name').value;
+    const email = document.getElementById('b-email').value;
+    const phone = document.getElementById('b-phone').value;
+    const date = document.getElementById('b-date').value;
+    const guests = document.getElementById('b-guests').value;
+    const message = document.getElementById('b-message').value;
+    const tour = modalTitle.textContent; // Captures the tour/city name
+    
+    // Construct WhatsApp message
+    const waNumber = '212666023048';
+    const waText = `*New Booking Request - Authentic Morocco Tour*%0A%0A` +
+                   `*Tour:* ${tour}%0A` +
+                   `*Name:* ${name}%0A` +
+                   `*Email:* ${email}%0A` +
+                   `*Phone:* ${phone}%0A` +
+                   `*Date:* ${date}%0A` +
+                   `*Guests:* ${guests}%0A` +
+                   `*Message:* ${message || 'No special requests'}`;
+    
+    const waUrl = `https://wa.me/${waNumber}?text=${waText}`;
+    
+    // Show success state in UI
     bookingForm.style.display = 'none';
     bookingSuccess.style.display = 'block';
+    
+    // Redirect to WhatsApp in a new tab
+    window.open(waUrl, '_blank');
   });
 
   modalClose.addEventListener('click', closeModal);
