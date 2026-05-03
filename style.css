@@ -1202,10 +1202,15 @@ textarea:focus {
   .logo {
     font-size: 1.3rem; /* Prevent overflow on small screens */
   }
-  /* Hide slider arrows on mobile since users swipe natively */
+  /* Adjust slider arrows on mobile */
   .tour-swiper .swiper-button-next,
   .tour-swiper .swiper-button-prev {
-    display: none;
+    width: 36px;
+    height: 36px;
+  }
+  .tour-swiper .swiper-button-next::after,
+  .tour-swiper .swiper-button-prev::after {
+    font-size: 1rem;
   }
 }
 
