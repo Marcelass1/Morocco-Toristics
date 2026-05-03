@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/jpeg" href="/logo.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explore Fes - The Cultural Capital | Authentic Morocco Tour</title>
+    <meta name="description" content="Step back in time in Fes, Morocco's spiritual and cultural heart. Navigate the world's largest car-free Medina and discover ancient madrasas.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/style.css">
+  
+<style>
+  .seo-page { padding-top: 50px; min-height: 80vh; background: var(--c-bg-light); }
+  .seo-hero { height: 60vh; position: relative; display: flex; align-items: center; justify-content: center; }
+  .seo-hero-bg { position: absolute; top:0; left:0; width:100%; height:100%; background-size: cover; background-position: center; z-index: 1; }
+  .seo-hero-overlay { position: absolute; top:0; left:0; width:100%; height:100%; background: rgba(0,0,0,0.5); z-index: 2; }
+  .seo-hero-title { position: relative; z-index: 3; color: white; font-family: var(--font-display); font-size: 4rem; text-align: center; }
+  .seo-content { padding: 60px 20px; font-size: 1.15rem; line-height: 1.8; max-width: 800px; margin: 0 auto; }
+  .seo-content h2 { color: var(--c-primary); font-family: var(--font-display); font-size: 2.5rem; margin-bottom: 20px; }
+  .seo-content p { margin-bottom: 20px; }
+  /* Ensure navbar is solid on separate pages */
+  .glass-nav { background: var(--c-bg) !important; box-shadow: 0 4px 20px rgba(0,0,0,0.05); }
+  [data-theme="dark"] .glass-nav { background: #111827 !important; }
+</style>
+</head>
+  <body>
+<nav id="navbar" class="glass-nav">
+      <div class="nav-container">
+        <a href="#" class="logo">
+          <img src="/logo.jpg" alt="Authentic Morocco Tour" />
+        </a>
+        <div class="nav-links">
+          <a href="#home" data-i18n="nav_home">Home</a>
+          <a href="#tours" data-i18n="nav_tours">Tours</a>
+          <a href="#destinations" data-i18n="nav_dest">Destinations</a>
+          <a href="#experiences" data-i18n="nav_exp">Experiences</a>
+          <a href="#about" data-i18n="nav_about">About</a>
+          <a href="#" id="nav-plan-btn" class="btn-primary-sm" data-i18n="nav_plan">Plan Your Trip</a>
+        </div>
+        <select id="lang-select" class="lang-selector">
+          <option value="en">EN</option>
+          <option value="fr">FR</option>
+          <option value="ar">AR</option>
+          <option value="nl">NL</option>
+          <option value="de">DE</option>
+          <option value="it">IT</option>
+        </select>
+        <button id="dark-mode-toggle" class="dark-mode-btn" aria-label="Toggle dark mode">
+          <span class="icon-sun">☀️</span>
+          <span class="icon-moon" style="display:none;">🌙</span>
+        </button>
+        <div class="mobile-menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+<main>
+  <div class="seo-hero">
+    <div class="seo-hero-bg" style="background-image: url('/city_fes.png')"></div>
+    <div class="seo-hero-overlay"></div>
+    <h1 class="seo-hero-title">Fes</h1>
+  </div>
+  <div class="seo-page">
+    <div class="seo-content">
+      <h2>The Spiritual and Cultural Heart of Morocco</h2><p>Fes is the oldest of Morocco's imperial cities and serves as the country's cultural and spiritual center. Its crowning jewel is <strong>Fes el-Bali</strong>, the world's largest car-free urban area and a UNESCO World Heritage site.</p><p>Stepping into the Medina is like stepping back in time. You will navigate over 9,000 narrow alleyways, past donkeys carrying goods, bustling souks, and incredible architectural masterpieces like the <em>Bou Inania Madrasa</em>.</p><p>Don't miss the famous <strong>Chouara Tannery</strong>, where leather is dyed using ancient techniques in massive stone vessels, creating a striking patchwork of colors that has remained unchanged for centuries.</p>
+      <div style="text-align: center; margin-top: 50px;">
+        <a href="/#tours" class="btn-primary">View Our Tours</a>
+      </div>
+    </div>
+  </div>
+</main>
+<!-- Footer -->
+    <footer id="contact" class="footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <h2>Authentic Morocco Tour</h2>
+          <p data-i18n="footer_desc">Your ultimate guide to exploring the unparalleled beauty and rich culture of Morocco.</p>
+        </div>
+        <div class="footer-links">
+          <h4 data-i18n="footer_quick">Quick Links</h4>
+          <ul>
+            <li><a href="#home" data-i18n="nav_home">Home</a></li>
+            <li><a href="#destinations" data-i18n="nav_dest">Destinations</a></li>
+            <li><a href="#experiences" data-i18n="nav_exp">Experiences</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4 data-i18n="footer_contact">Contact Us</h4>
+          <ul>
+            <li><span data-i18n="footer_email">Email:</span> hello@authenticmoroccotour.com</li>
+            <li><span data-i18n="footer_phone">Phone:</span> +212 555 000 111</li>
+            <li><span data-i18n="footer_address">Address:</span> Medina, Marrakech, Morocco</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Authentic Morocco Tour. All rights reserved.</p>
+      </div>
+    </footer>
